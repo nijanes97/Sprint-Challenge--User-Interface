@@ -61,8 +61,7 @@ header nav a:last-child {
 }
 header .logo {
     margin-right: 40px;
-    margin-left: 80px;
-    width: 250px;
+    margin-left: 10%;
 }
 body {
     line-height: 1;
