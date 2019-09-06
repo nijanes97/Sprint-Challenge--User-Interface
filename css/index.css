@@ -28,8 +28,51 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+@keyframes box{
+    from{border-radius: 14px;}
+    to{border-radius: 8px;}
+}
+header{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+header nav{
+	display: flex;
+	width: 691px;
+	justify-content: top;
+	margin-top: 35px;
+}
+header nav a {
+    margin-right: 65px;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+header nav a:first-child {
+	margin-left: 0;
+}
+header nav a:last-child {
+	margin-right: 0;
+}
+header .logo {
+    margin-right: 40px;
+    margin-left: 80px;
+    width: 250px;
+}
 body {
-	line-height: 1;
+    line-height: 1;
+}
+body .topimg{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:800px;
+    margin-top: 20px;
 }
 ol, ul {
 	list-style: none;
@@ -69,6 +112,7 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+    margin-top: 20px;
 }
 
 .top-content {
@@ -101,17 +145,45 @@ p {
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.middle-content .boxes div{
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+.middle-content .boxes .box1{
+    background-color: teal;
+}
+.middle-content .boxes .box2{
+    background-color: gold;
+}
+.middle-content .boxes .box3{
+    background-color: cadetblue;
+}
+.middle-content .boxes .box4{
+    background-color: coral;
+}
+.middle-content .boxes .box5{
+    background-color: crimson;
+}
+.middle-content .boxes .box6{
+    background-color: forestgreen;
+}
+.middle-content .boxes .box7{
+    background-color: darkorchid;
+}
+.middle-content .boxes .box8{
+    background-color: hotpink;
+}
+.middle-content .boxes .box9{
+    background-color: indigo;
+}
+.middle-content .boxes .box10{
+    background-color: dodgerblue;
+}
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -144,3 +216,117 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+.container .about{
+    padding: 12px;
+    padding-top:0;
+}
+.container .units {
+    border-top: 1px dotted grey;
+    padding: 20px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container .units div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.container .units div .strategy{
+    display:flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 0px 10px 10px 10px;
+    border-bottom: 1px dashed grey;
+    width: 50%;
+}
+.container .units div .work{
+    display:flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 0px 10px 10px 10px;
+    border-bottom: 1px dashed grey;
+    width: 50%;
+}
+.container .units div .places{
+    display:flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 10px 10px 0px 10px;
+    border-bottom: 1px dashed grey;
+    width: 50%;
+}
+.container .units div .collab{
+    display:flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 10px 10px 0px 10px;
+    border-bottom: 1px dashed grey;
+    width: 50%;
+}
+.container .units button{
+    background: white;
+	width: 38%;
+	margin-top: 15px;
+	padding: 10px 15px 10px 15px;
+	font-size: 12px;
+	border: 1px solid black;
+	border-radius: 8px;
+}
+.container .units button:hover{
+    animation-name: box;
+    animation-duration: 4s;
+}
+.container .ending{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0px 20px 20px;
+}
+
+.container .contact{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    border-top: 1px dashed black;
+}
+.container .contact .form{
+    display: flex;
+    flex-direction: column;
+    background: lightgrey;
+    padding: 20px;
+}
+.container .contact .form input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+
+  .container .contact .form input[type=submit] {
+    background: white;
+	width: 15%;
+	padding: 5px;
+	font-size: 15px;
+	border: 1px solid black;
+	border-radius: 8px;
+  }
+  .container .contact .form input[type=submit]:hover {
+    animation-name: box;
+    animation-duration: 4s;
+  }
+  .topimgcontact{
+    object-fit: cover;
+    object-position: 100% 10%;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:800px;
+    height: 200px;
+    margin-top: 20px;
+  }
